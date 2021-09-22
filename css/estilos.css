@@ -1,0 +1,390 @@
+body {
+    font-family: 'open sans';
+ }
+ 
+ .Contenedor {
+    padding: 30px 0;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+ }
+ 
+ .Titulo {
+    color: #090909;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+ }
+ 
+ header {
+    width: 100%;
+    height: 400px;
+    background: #aa4b6b;;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(340, 39%, 48%, 0.419), hsla(240, 10%, 47%, 0.467), hsla(188, 44%, 42%, 0.474)), url(../chtm/portada2.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340, 39%, 48%, 0.419), hsla(240, 10%, 47%, 0.467), hsla(188, 44%, 42%, 0.474)), url(../chtm/Portada2.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    position: relative;
+ }
+ 
+ nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+ }
+ 
+ nav > a{
+    color:#fff;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 10px;
+ }
+ 
+ nav > a:hover{
+    text-decoration: underline;
+ }
+ 
+ header .Texto{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+ }
+ 
+ .Texto h1{
+    font-size: 50px;
+    color:#fff;
+ }
+ 
+ .Texto h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fffb;
+    width: 100%;
+    height: 100%;
+ }
+ 
+ .Catalogos{
+    background: #f2f2f2;
+ }
+ 
+ .Galeria-Port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+ 
+ .Imagen-Port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 #00000080;
+ }
+ 
+ .Imagen-Port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+ }
+ 
+ .Galeria{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   transform: scale(0);
+   background: #a2a0a348;
+   transition: transform .5s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+
+ .Galeria img{
+   width: 50px;
+ }
+
+ .Galeria p{
+   color: #f2f2f2;
+ }
+ .Imagen-Port:hover {
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ 
+ .Imagen-Port:hover .Galeria{
+   transform: scale(1);
+ }
+
+ .Servicios{
+   background: #f2f2f2;
+   padding-bottom: 30px;
+ }
+
+ .Contenedor-Servicios{
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .Servicio-Individual{
+   width: 30%;
+   height: 30%;
+   text-align: center;
+ }
+
+ .Servicio-Individual img{
+   width: 300%;
+ }
+
+ .Servicio-Individual h3{
+   margin: 10px 0;
+ }
+
+ .Servicio-Individual p{
+   font-weight: 300%;
+   text-align: center;
+ }
+
+footer{
+   background: #161616;
+   padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+ .Contenedor-Footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #fffbfb;
+ }
+ .Contenedor-Foo{
+   margin-bottom: 20px;
+   text-align: center;
+ }
+ 
+ .Contenedor-Foo h4{
+    text-align: center;
+    color: azure;
+    border-bottom: 3px solid #3c8e9a79;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+ }
+
+ .Contenedor-Foo p{
+   text-align: center;
+   color: #ffffff;
+ }
+
+ .Contenedor-Foo a{
+   text-align: center;
+   color: #ffffff;
+   text-decoration: none;
+ }
+
+ .Titulo-Final{
+    text-align: center;
+    font-size: 20px;
+    margin: 15px 0 0 0;
+    color: #646464;
+ }
+
+.carousel__contenedor {
+	position: relative;
+}
+/*
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: rgb(0, 0, 0);
+	opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+	left: +1px;
+}
+
+.carousel__siguiente {
+	right: +1px;
+}*/
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+	text-align: center;
+}
+
+.carousel__elemento img{
+   width: 85%;
+   height: 88%;
+   object-fit: cover;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #8a8989;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
+/* Login perroooooooooo*/
+
+.container{
+   background: #fff;
+   max-width: 350px;
+   width: 100%;
+   padding: 25px 30px;
+   border-radius: 5px;
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+ }
+ .container form .title{
+   font-size: 30px;
+   font-weight: 600;
+   margin: 20px 0 10px 0;
+   position: relative;
+ }
+ .container form .title:before{
+   content: '';
+   position: absolute;
+   height: 4px;
+   width: 33px;
+   left: 0px;
+   bottom: 3px;
+   border-radius: 5px;
+   background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+ }
+ .container form .input-box{
+   width: 100%;
+   height: 45px;
+   margin-top: 25px;
+   position: relative;
+ }
+ .container form .input-box input{
+   width: 100%;
+   height: 100%;
+   outline: none;
+   font-size: 16px;
+   border: none;
+ }
+ .container form .underline::before{
+   content: '';
+   position: absolute;
+   height: 2px;
+   width: 100%;
+   background: #ccc;
+   left: 0;
+   bottom: 0;
+ }
+ .container form .underline::after{
+   content: '';
+   position: absolute;
+   height: 2px;
+   width: 100%;
+   background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+   left: 0;
+   bottom: 0;
+   transform: scaleX(0);
+   transform-origin: left;
+   transition: all 0.3s ease;
+ }
+ .container form .input-box input:focus ~ .underline::after,
+ .container form .input-box input:valid ~ .underline::after{
+   transform: scaleX(1);
+   transform-origin: left;
+ }
+ .container form .button{
+   margin: 40px 0 20px 0;
+ }
+ .container .input-box input[type="submit"]{
+   background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+   font-size: 17px;
+   color: #fff;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+ }
+ .container .input-box input[type="submit"]:hover{
+   letter-spacing: 1px;
+   background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+ }
+ .container .option{
+   font-size: 14px;
+   text-align: center;
+ }
+ .container .facebook a,
+ .container .twitter a{
+   display: block;
+   height: 45px;
+   width: 100%;
+   font-size: 15px;
+   text-decoration: none;
+   padding-left: 20px;
+   line-height: 45px;
+   color: #fff;
+   border-radius: 5px;
+   transition: all 0.3s ease;
+ }
+ 
+ .container .facebook i,
+ .container .twitter i{
+   padding-right: 12px;
+   font-size: 20px;
+ }
+ .container .twitter a{
+   background: linear-gradient(to right,  #00acee 0%, #1abeff 100%);
+   margin: 20px 0 15px 0;
+ }
+ .container .twitter a:hover{
+   background: linear-gradient(to left,  #00acee 0%, #1abeff 100%);
+   margin: 20px 0 15px 0;
+ }
+ .container .facebook a{
+   background: linear-gradient( to right,  #3b5998 0%, #476bb8 100%);
+   margin: 20px 0 50px 0;
+ }
+ .container .facebook a:hover{
+   background: linear-gradient( to left,  #3b5998 0%, #476bb8 100%);
+   margin: 20px 0 50px 0;
+ }
+ ::selection{
+   background: #ff80bf;
+ 
+ }
