@@ -150,3 +150,10 @@ margin: 20px 0 50px 0;
 background: linear-gradient( to left,  #3b5998 0%, #476bb8 100%);
 margin: 20px 0 50px 0;
 }
+
+@media screen and (max-width:900px)
+{
+   html,body{
+      background-position: center;
+   }
+}
